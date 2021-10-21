@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="magnific-popup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapsi.com/css?family=Open+Sans:100,300,400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+      <!-- Navbar -->
+      <nav>
+        <label class="toggle">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-can-you-help.html">How can you help</a></li>
+            <li><a href="Partners-Sponsors.html">Partners & Sponsors</a></li>
+            <li><a href="Impressions.html">Imperessions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialtop">
+            <div class="top-social">
+                <a href="https://www.facebook.com/AchieversSA/?ref=page_internal"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+<!-- body -->
+    <section id="facilities">
+        <div class="container">
+            <div class="title">
+                <h1>About Us </h1>
+                <p>How an idea became a project — and where Achievers stands today</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-text-center">
+                        <img src="images/94116936_2579275478851122_7227082945754824704_n.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">History</h5>
+                            <p class="card-text">An idea became a project - a project became a dream</p>
+                                <a href="">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-text-center">
+                        <img src="images/182505747_114578667431177_3511216117845851670_n.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Team & Coaches</h5>
+                            <p class="card-text">Achievers team and coaches. Three Teams.</p>
+                                <a href="">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-text-center">
+                        <img src="images/126820071_2839192896357078_6736299119989560929_n.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Success Stories</h5>
+                            <p class="card-text">#changinglives is more than just a motto - it's the result of hard work, discipline and faith.</p>
+                                <a href="">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-text-center">
+                        <img src="images/abstract-banner-background-with-red-shapes_1361-3348.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Staff & Ambassadors</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Natus maiores possimus impedit dolorem in nisi veniam illum beatae consequatur dolor odit libero nihil nulla, blanditiis reiciendis, eligendi vitae dolorum est.</p>
+                                <a href="">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="video-section">
+        <div class="home">
+            <h2>Responsive Video Popup</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Amet repellat, veniam veritatis omnis dolor quam aliquam voluptatibus esse officiis placeat qui totam? Hic, 
+            perferendis nesciunt quo explicabo perspiciatis itaque nihil!</p>
+            <a href="#" onclick="show();">Watch Video</a>
+        </div>
+        <div class="popup">
+            <video src="EMVULENI-NDLULAMTHI.mp4" controls="true"></video>
+            <img src="images/vivo-ipl-bg.jpg" onclick="show();" class="close" alt="">
+        </div>
+    </section>
+   
+    <script>
+        function show(){
+            var popup = document.querySelector('.popup');
+            var video = document.querySelector('video');
+            popup.classList.toggle('active')
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
+    <!--Javascript -->
+  
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $('.toggle i').click(function(){
+            $('ul').toggleClass('show');
+        });
+    </script>
+
+</body>
+</html>

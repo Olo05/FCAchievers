@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+
+.toggle {
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+}
+nav {
+    background-color: #000000;
+    height: 45px;
+    width: 100%;
+}
+ul{
+    float: left;
+    margin-left: 5%;
+}
+ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+ul li a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+ul li:first-child{
+    background-color: #FF7D00;
+}
+ul li:hover{
+    background-color: #FF7D00;
+    color: #fff;
+}
+.socialtop {
+    float: left;
+    margin-left: 5%;
+}
+.top-social {
+    padding: 14px 15px;
+}
+.top-social a{
+    padding: 13px;
+    color: #fff;
+}
+.top-social a:hover{
+    color: #FF7D00;
+}
+
+@media screen and (max-width: 1052px){
+    .toggle{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        top: -400px;
+        z-index: -1;
+        margin-top: -15px;
+        right: 0;
+        left: 0;
+        width: 200px;
+        background-color: #222222;
+        display: inline-block;
+        transition: top .4s;
+        margin-left: 0;
+    }
+    ul.show{
+        top: 60px;
+    }
+    ul li{
+        top: 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 800px){
+    ul{
+        width: 100%;
+    }
+}
+/************* Facilities *********/
+#facilities {
+    background-color: #dbe5e6;
+    padding: 30px 0px;
+}
+#facilities h1{
+    font-weight: 900;
+    font-size: 34px;
+    padding-bottom: 5px;
+}
+.title {
+    text-align: center;
+    padding: 25px 0px;
+}
+.title p{
+    font-size: 25px;
+}
+.card-body{
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-size: 3.5em;
+}
+.card-text {
+    font-size: 2em;
+}
+.card {
+    margin: 20px 10px;
+}
+.card-body a{
+    color: #0c7f90;
+    text-decoration: none;
+    font-size: 15px;
+    margin: auto;
+    font-weight: 600;
+}
+.card-body a:hover{
+    color: #63a6b0;
+    text-decoration: none;
+}
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c7f90;
+}
+.home {
+    position: relative;
+    max-width: 500px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+.home h2 {
+    color: #ffc800;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home p {
+    color: #fff;
+    padding: 5px 10px;
+    text-align: justify;
+}
+.home a {
+    display: inline-block;
+    background-color: #262626;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 20px;
+    font-size: 20px;
+    border: 5px solid #fff;
+}
+.popup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+.popup .active {
+    visibility: visible;
+    opacity: 1;
+}
+.popup video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+    box-shadow: 0 0 10px 10px rgba(255,255,255,4);
+}
+.popup .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    max-width: 35px;
+    cursor: pointer;
+    filter: invert(1);
+}
+@media (max-width: 991px){
+    .popup video{
+        max-width: 90%;
+    }
+}
